@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title style="color: red">www.BookPlays.in</title>
+    <meta charset="windows-1252">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+  	<script src="script.js"></script>
+</head>
+<body onload="init()">
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Home</a></li> 
+            <li><a href="#section2">Register</a></li> 
+            <li><a href="#section3">show_registration</a></li>
+	
+        </ul>
+    </nav>
+    <div id="section1">
+    <h1>BookPlays.in</h1>
+		<br>
+		<div clas="info">
+			<h2 id="sanam">BALGANDHARV RANG MANDIR,Pune</h2>
+			<br><br>
+			
+			<p>
+				Book Plays Coming Into your cities<br> Enjoy the Live Performances of Plays! <br><br> So Hurry Up!!! Book Yours Today<br> Click on the Register Tab And Grab yours Tickets!!!<br><br><strong>Address: Balgandharv Rangmandir, Pune.<br> Dates: 24<sup>th</sup>, 25<sup>th</sup> and 26<sup>th</sup> July 2020</strong>
+			</p>
+			<br>
+</div>
+</div>
+    
+<div id="section2">
+    <h1>BookPlay.in</h1>
+        <h2>Registration Form</h2>
+   <br> <br>
+        <table class="mov" id="mov">
+            <form id="myform" onsubmit="event.preventDefault();" autocomplete="off">
+            <tr>
+                <th><label>Name:</label></th>
+                <th><input type="text" id="fname" name="fname" placeholder="First Name" required></th>
+                <th><input type="text" id="lname" name="lname" placeholder="Last Name" required></th>
+            </tr>
+            <tr>
+                <th> <label>Mobile No: </label></th>
+                <th><input type="text" id="mono" name="mono" placeholder="starting with 0" required></th>
+            </tr>
+            <tr>
+                <th><label>E-mail: </label></th>
+                <th><input type="email" id="email" name="email" placeholder="EX: myname@example.com" required></th>
+            </tr>
+            <tr>
+                <th><label>Select Play:</label></th>
+                <th><select name="seat" id="seat" required>
+					<option value=""disabled selected hidden>Chose Your Play</option>
+                    <option value="PN203642">NATSAMTRAT</option>
+                    <option value="PN205247">SHAMBHURAJE</option>
+                    <option value="PN208741">HAMLET</option>
+                    </select>
+                </th>
+            
+                <th><lable>No. of Tickets:</lable></th>
+                <th><input type="number" id="tick" name="tick" min="1" max="5" placeholder="MAX-5" width="50%" required></th>
+            </tr>
+            <tr>
+                <th><lable>Mode of payment:</lable></th>
+                <th>
+                    <input type="radio" id="pay" name="pay" value="UPI" required="required">
+                    <label for="upi">UPI</label><br>
+                    <input type="radio" id="pay" name="pay" value="CARD" required="required">
+                    <label for="CARDS">Credit/Debit Card:</label><br>
+                    <input type="radio" id="pay" name="pay" value="NETB" required="required">
+                    <label for="NETB">NET Banking:</label>
+                </th>
+                </tr>
+                <tr>
+                <th><lable>Day and Date Slot:</lable></th>
+                <th>
+                    <input type="radio" id="day" name="day" value="FRI-24/07/2020" required="required">
+                    <label for="MON">FRI-24/07/2020</label><br>
+                    <input type="radio" id="day" name="day" value="SAT-25/07/2020" required="required">
+                    <label for="TUE">SAT-25/07/2020</label><br>
+                    <input type="radio" id="day" name="day" value="SUN-26/07/2020" required="required">
+                    <label for="SUN">SUN-26/07/2020</label>
+                </th>
+            </tr>
+                
+            <tr>
+                <th>
+                    <input type="checkbox" id="term" name="tems" value="condition" required></th>
+                <th> <label for="terms" size="100"> Agree All terms And Conditions</label><br></th>
+            
+            </tr>
+            <tr>
+                <th><button onclick="addHtmlTableRow();"><a>SUBMIT</a></button></th>
+                <th><button onclick="resetForm();">RESET</button></th>
+            </tr>
+            </form>
+        </table>
+
+</div>
+     <div id="section3" >
+     <h1>BookPlays.in</h1>
+    <h2> Successful Bookings</h2>
+         
+    <table id="table" class="sub" border="1">
+         <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Mobile No.</th>
+            <th>Email</th>
+            <th>SELECCTED PLAY ID</th>
+            <th>No.of Tickets</th>
+            <th>Mode of Payment</th>
+            <th>day and Date</th >
+        </tr>
+
+    </table>
+    </div>
+    
+
+
+</body>
+</html>
